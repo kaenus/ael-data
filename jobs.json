@@ -1,6 +1,6 @@
 [
     {
-        "img": "../img/logo_1.png",
+        "img": "./img/logo_1.png",
         "title": "Hiring Graphic designer at Chennai",
         "company": "Hexaware Technologies",
         "location": "Chennai",
@@ -10,7 +10,7 @@
         "postedon": "1day ago"
     },
     {
-        "img": "../img/logo_2.png",
+        "img": "./img/logo_2.png",
         "title": "Hiring Graphic designer at Chennai",
         "company": "Hexaware Technologies",
         "location": "Chennai",
@@ -20,7 +20,7 @@
         "postedon": "1day ago"
     },
     {
-        "img": "../img/logo_3.png",
+        "img": "./img/logo_3.png",
         "title": "Hiring Graphic designer at Chennai",
         "company": "Hexaware Technologies",
         "location": "Chennai",
@@ -30,7 +30,7 @@
         "postedon": "1day ago"
     },
     {
-        "img": "../img/logo_1.png",
+        "img": "./img/logo_1.png",
         "title": "Hiring Graphic designer at Chennai",
         "company": "Hexaware Technologies",
         "location": "Chennai",
@@ -40,17 +40,7 @@
         "postedon": "1day ago"
     },
     {
-        "img": "../img/logo_1.png",
-        "title": "Hiring Graphic designer at Chennai",
-        "company": "Hexaware Technologies",
-        "location": "Chennai",
-        "experience": "5-8years",
-        "salary": "Not disclosed",
-        "url": "https://www.w3schools.com/js/default.asp",
-        "postedon": "1day ago"
-    },
-    {
-        "img": "../img/logo_1.png",
+        "img": "./img/logo_1.png",
         "title": "Hiring Graphic designer at Chennai",
         "company": "Hexaware Technologies",
         "location": "Chennai",
