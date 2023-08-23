@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AEL Data Interview sample</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="container">
+            <a href="#home" id="logo">LOGO</a>
+            <i class="fas fa-bars" id="ham-menu"></i>
+            <ul id="nav-bar">
+                <li>
+                    <a href="#">Institutions</a>
+                </li>
+                <li>
+                    <a href="#">Associations</a>
+                </li>
+                <li>
+                    <a href="#">Corporates</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <button class="button-secondary"><a href="#">Sign In</a></button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="banner">
+        <div class="container">
+            <div class="row pt-50 pb-50 d-flex pt-100">
+                <div class="column-75">
+                    <p>TWO DAYS WORK FROM HOME</p>
+                    <h1 class="text-orange heading">Industry Connect<br><span class="text-grey">Internship
+                            Program</span></h1>
+                    <div id="banner-box-content">
+                        <!-- Banner box content goes here-->
+                    </div>
+                </div>
+                <div class="column-25 banner-form">
+                    <p class="text-center text-gery pb-30"><strong>Fill in the details to Apply</strong></p>
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="number" id="mobile" name="mobile" placeholder="Mobile" required>
+                        <select id="stream" name="stream" required>
+                            <option value="Stream">Stream</option>
+                            <option value="Stream1">Stream 1</option>
+                            <option value="Stream2">Stream 2</option>
+                        </select>
+                        <textarea id="subject" name="subject" placeholder="College/University Name"></textarea>
+                        <br>
+                        <input type="submit" value="Submit" class="btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits-bg">
+        <div id="benefits" class="container pt-50 pb-50">
+            <h1 class="heading text-white text-center">What are the <span class="text-orange">benefits?</span></h1>
+            <p class="text-white text-center pb-20 body-text">Participating in our two-day digital marketing internship
+                program offers
+                a
+                range of benefits for college
+                students.</p>
+            <div class="flex-container p-20">
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-1">01</div>
+                        <p class="text-left">Connect with Industry Professionals</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-2">02</div>
+                        <p class="text-left">Access to Industry-Certified Online Skill Courses for Free</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-3">03</div>
+                        <p class="text-left">Access to Digital Learning Resources (eBooks) for Free</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-4">04</div>
+                        <p class="text-left">Internship Certificate from the Industry</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-5">05</div>
+                        <p class="text-left">Job placement opportunities</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="d-flex align-center">
+                        <div class="bg-square bg-color-6">06</div>
+                        <p class="text-left">Win Scratch cards worth up to ₹10,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Section -->
+    <section id="jobs">
+        <div class="container">
+            <h1 class="text-orange text-center pt-50 pb-20 heading">Jobs you may like <span class="text-grey">to
+                    apply</span>
+            </h1>
+            <p class="body-text text-center pb-50">During the internship program, you can apply to any<br>jobs based on
+                your
+                specialisation
+            </p>
+            <div class="">
+                <div class="tab">
+                    <button class="tablinks" onclick="openJobs(event, 'Latest-Jobs')" id="defaultOpen">Latest
+                        Jobs</button>
+                    <button class="tablinks" onclick="openJobs(event, 'Trending-Jobs')">Trending Jobs</button>
+                    <button class="tablinks" onclick="openJobs(event, 'Recommended')">Recommended</button>
+                    <button class="tablinks" onclick="openJobs(event, 'Most-Favourite')">Most Favourite</button>
+                    <button class="tablinks" onclick="openJobs(event, 'Location-Based')">Location Based</button>
+                </div>
+                <div class="pb-50 pt-30">
+                    <div id="Latest-Jobs" class="tabcontent">
+                        <div id="data-output" class="row d-flex">
+                            <!-- Prodcuts from javascript file in here. -->
+                        </div>
+                    </div>
+
+                    <div id="Trending-Jobs" class="tabcontent">
+                        <h1 class="p-20 text-center">All trending jobs shown here</h1>
+                    </div>
+
+                    <div id="Recommended" class="tabcontent">
+                        <h1 class="p-20 text-center">your job recommendations shown here</h1>
+                    </div>
+                    <div id="Most-Favourite" class="tabcontent">
+                        <h1 class="p-20 text-center">Your Favorite jobs shown here</h1>
+                    </div>
+                    <div id="Location-Based" class="tabcontent">
+                        <h1 class="p-20 text-center">Jobs based on your location shown here</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="row pt-50 pb-50 d-flex">
+                <div class="column-60">
+                    <h1 class="heading text-orange pb-50">Frequently Asked Questions</h1>
+                    <div id="questions">
+                        <!-- questions goes here-->
+                    </div>
+                </div>
+                <div class="column-40">
+                    <div class="position-relative pl-40">
+                        <img src="./img/Faq_img.png" alt="Faq_img" class="w-100">
+                        <div class="queries text-center">For any queries write us to<br><a href="mailto:info@ulektz.com"
+                                class="text-orange">Info@ulektz.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- video section -->
+    <section id="video-testimonial">
+        <div class="container">
+            <div class="row pt-50 pb-50 d-flex">
+                <div class="column-50"><img src="./img/video_img.png" alt="video-img" class="w-100"></div>
+                <div class="column-50 d-flex">
+                    <div class="flex-container-coloum">
+                        <h1 class="text-grey pb-30 heading">What our interns have to say about<br><span
+                                class="text-orange">uLektz
+                                Internship Program</span></h1>
+                        <p class="text-grey pb-30">Hear it straight from them as they share their
+                            internship journey, growth, and unforgettable moments. Get inspired by their stories of
+                            success
+                            and ambition!</p>
+                        <button class="btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intern Section -->
+    <section id="intern">
+        <div class="container">
+            <h1 class="text-center text-orange pt-50 pb-20 heading">uLektz Interns</h1>
+            <p class="body-text text-center pb-50 text-white">Successfully completed 2 days Digital Marketing Internship
+                Program in
+                uLektz
+            </p>
+            <div id="container">
+                <div id="slider-container">
+                    <span onclick="slideRight()" class="btn"></span>
+                    <div id="slider">
+                        <div class="slide">
+                            <img src="./img/img_1.png" alt="img-1" class="pb-20">
+                            <p class="text-white "><strong>Mohan</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_2.png" alt="img-2" class="pb-20">
+                            <p class="text-white "><strong>Divya</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_3.png" alt="img-3" class="pb-20">
+                            <p class="text-white "><strong>Manoj</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_1.png" alt="img-1" class="pb-20">
+                            <p class="text-white "><strong>Mani</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_2.png" alt="img-2" class="pb-20">
+                            <p class="text-white "><strong>Monisha</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_3.png" alt="img-3" class="pb-20">
+                            <p class="text-white "><strong>Srini</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_1.png" alt="img-1" class="pb-20">
+                            <p class="text-white "><strong>Vasan</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/img_2.png" alt="img-2" class="pb-20">
+                            <p class="text-white "><strong>Parkavi</strong></p>
+                            <p class="text-orange">Student</p>
+                        </div>
+                    </div>
+                    <span onclick="slideLeft()" class="btn"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="pt-50 pb-50">
+        <div class="container">
+            <div class="flex-container space-around">
+                <div class="flex-item p-20">
+                    <h3 class="text-white">Products</h3>
+                    <ul>
+                        <li>Campus</li>
+                        <li>Books</li>
+                        <li>Skills</li>
+                        <li>Jobs</li>
+                        <li>Meet</li>
+                        <li>Events</li>
+                        <li>News</li>
+                    </ul>
+                </div>
+                <div class="flex-item p-20">
+                    <h3 class="text-white">Solutions</h3>
+                    <ul>
+                        <li>Institutions</li>
+                        <li>Corportates</li>
+                        <li>Associations</li>
+                        <li>Services</li>
+                        <li>NAAC Accreditation Consultancy</li>
+                        <li>Academic Business Incubator Setup</li>
+                    </ul>
+                </div>
+                <div class="flex-item p-20">
+                    <h3 class="text-white">Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Leadership</li>
+                        <li>Partner</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="flex-item p-20">
+                    <h3 class="text-white">Case Studies</h3>
+                    <ul>
+                        <li>College</li>
+                        <li>University</li>
+                        <li>Distance Education</li>
+                        <li>Higher Education Publisher</li>
+                        <li>Skill Training Provider</li>
+                    </ul>
+                </div>
+                <div class="flex-item p-20">
+                    <h1 class="text-white text-left pb-20">Logo</h1>
+                    <p>20, LIC Building, Mount road, Chennai,<br>Tamilnadu - 600028</p>
+                    <p><a href="mailto:lic.gmail.com">lic@gmail.com</a></p>
+                    <p><a href="tel:9876543210">9876543210</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="social-icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
